@@ -1,4 +1,4 @@
-/****************** YOUR NAME: 
+/****************** YOUR NAME: Raquel Fernandes Castoldi
 
 The instructions describe the missing logic that is needed; you will translate these into JavaScript in the places indicated.
 
@@ -13,8 +13,6 @@ You are encouraged to use the provided naming convention for ease of review.
 
 let modelName='XYZ';
 let duration;
-
-
 
 /****************** helper function ******************/
 /* create a function called recalculate() which will
@@ -64,7 +62,7 @@ function changeModel() {
     document.getElementById('modelText').innerHTML = 'Model ' + modelName;
 }
 
-modelButton.addEventListener("click", changeModel)
+modelButton.addEventListener('click', changeModel);
 
 /****************** duration button logic ******************/
 /*  - first, create a variable to represent the "Change Duration" pseudo-button.
@@ -78,7 +76,8 @@ modelButton.addEventListener("click", changeModel)
 */
 
 // INSERT YOUR CODE HERE
-let durationButton = document.getElementById('durationButton')
+
+let durationButton = document.getElementById('durationButton');
 function changeDuration() {
     duration = prompt('Enter duration:');
     if (isNaN(duration)) {
@@ -88,4 +87,4 @@ function changeDuration() {
         recalculate();
     }
 }
-durationButton.addEventListener("click", changeDuration)
+durationButton.addEventListener('click', changeDuration);
